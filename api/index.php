@@ -15,16 +15,18 @@
 </head>
 
 <body class="w-100 vh-100">
-    <?php include_once './components/navbar.php'; ?>
+    <?php 
+    include_once('./components/navbar.php');
+    ?>
     <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
         <?php
         if (isset($_GET['page'])) {
             switch ($_GET['page']) {
                 case "baskara":
-                    include_once './pages/Bhaskara.php';
+                    include_once('./pages/Bhaskara.php');
                     break;
                 default:
-                    include_once './pages/Bhaskara.php';
+                    include_once('./pages/Bhaskara.php');
                     break;
             }
         }
