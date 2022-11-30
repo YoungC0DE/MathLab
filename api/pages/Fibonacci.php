@@ -8,6 +8,25 @@
     max-height: 180px;
     overflow: auto;
   }
+  @media (max-width: 600px){
+    .w-50 {
+      width: 75% !important;
+    }
+    .input-group {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .input-group span, .input-group input {
+      border-radius: 0 !important;
+      margin: 0 !important;
+      text-align: center !important;
+    }
+
+    input[type='number'] {
+      width: auto !important;
+    }
+  }
 </style>
 
 <div class="text-center align-middle mb-5">

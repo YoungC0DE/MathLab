@@ -8,6 +8,20 @@
     max-height: 180px;
     overflow: auto;
   }
+
+  @media (max-width: 600px) {
+    .w-50 {
+      width: 75% !important;
+    }
+
+    .input-group span,
+    .input-group input {
+      border-radius: 0 !important;
+      margin: 0 !important;
+      text-align: center !important;
+      width: 100% !important;
+    }
+  }
 </style>
 <div class="text-center align-middle mb-5">
   <span class="p-2 border rounded fs-2">Δ = b² - 4.a.c</span>
