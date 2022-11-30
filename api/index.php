@@ -11,13 +11,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <!---->
+    <style>
+    .navbar-nav a {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        background-color: #ffffff;
+        height: 3px;
+        width: 0%;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        transition: .3s;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+</style>
     <title>MathLab</title>
 </head>
 
 <body class="w-100 vh-100">
-    <?php
-        include_once('./components/navbar.php');
-    ?>
+    <?php include_once('./components/navbar.php'); ?>
     
     <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
         <?php

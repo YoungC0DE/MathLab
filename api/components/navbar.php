@@ -1,23 +1,3 @@
-<style>
-    .navbar-nav a {
-        position: relative;
-    }
-
-    .nav-link::after {
-        content: '';
-        background-color: #ffffff;
-        height: 3px;
-        width: 0%;
-        left: 0;
-        bottom: 0;
-        position: absolute;
-        transition: .3s;
-    }
-
-    .nav-link:hover::after {
-        width: 100%;
-    }
-</style>
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <a href="#">
