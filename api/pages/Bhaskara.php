@@ -9,7 +9,6 @@
     overflow: auto;
   }
 </style>
-
 <div class="text-center align-middle mb-5">
   <span class="p-2 border rounded fs-2">Δ = b² - 4.a.c</span>
 </div>
@@ -50,7 +49,7 @@
       C = parseInt(document.getElementById('valueC').value)
 
     var delta = B * B - 4 * A * C,
-    x1 = (-B + Math.sqrt(delta)) / (2 * A)
+      x1 = (-B + Math.sqrt(delta)) / (2 * A)
     x2 = (-B - Math.sqrt(delta)) / (2 * A)
 
     result.textContent = "Δ = b² - 4.a.c\n"
