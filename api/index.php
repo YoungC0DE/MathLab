@@ -27,6 +27,9 @@
                 case "Fibonacci":
                     include_once('pages/Fibonacci.php');
                     break;
+                case "Torricelli":
+                    include_once('pages/Torricelli.php');
+                    break;
                 default:
                     include_once('pages/Bhaskara.php');
                     break;

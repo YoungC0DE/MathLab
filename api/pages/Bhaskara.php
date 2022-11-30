@@ -17,16 +17,12 @@
 <span class="mb-2 text-secondary">Preencha os valores para o calculo</span>
 <form class="d-flex flex-row w-50 gap-3 mb-3">
   <div class="input-group has-validation">
-    <span class="input-group-text rounded-0 rounded-start">A</span>
-    <input type="number" value=0 class="form-control" id="valueA">
-  </div>
-  <div class="input-group has-validation">
-    <span class="input-group-text rounded-0 rounded-start">B</span>
-    <input type="number" value=0 class="form-control" id="valueB">
-  </div>
-  <div class="input-group has-validation">
-    <span class="input-group-text rounded-0 rounded-start">C</span>
-    <input type="number" value=0 class="form-control" id="valueC">
+    <span class="input-group-text rounded-0 rounded-start">Valor A</span>
+    <input type="number" value=0 class="form-control rounded-0" id="valueA">
+    <span class="input-group-text rounded-0">Valor B</span>
+    <input type="number" value=0 class="form-control rounded-0" id="valueB">
+    <span class="input-group-text rounded-0">Valor C</span>
+    <input type="number" value=0 class="form-control rounded-0 rounded-end" id="valueC">
   </div>
 </form>
 
@@ -62,8 +58,8 @@
     result.textContent += `Δ = ${B * B} - ${4 * A * C}\n`
     result.textContent += `Δ = ${delta}\n\n`
     result.textContent += "-------------------------\n\n"
-    if (delta < 0) {
-      result.textContent += "O delta é negativo e não possui raizes reais\n"
+    if (delta <= 0) {
+      result.textContent += "O delta é negativo ou igual a zero e não possui raizes reais\n"
       return
     }
     result.textContent += "X = (-b ± √Δ) / 2.a\n"

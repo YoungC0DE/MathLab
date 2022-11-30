@@ -27,7 +27,7 @@
         <div class="d-flex flex-row gap-4 navbar-nav">
             <a class="nav-link active" aria-current="page" href="?page=Bhaskara">Bhaskara</a>
             <a class="nav-link active" aria-current="page" href="?page=Fibonacci">Fibonacci</a>
-            <a class="nav-link active" aria-current="page" href="?page=MMC">MMC</a>
+            <a class="nav-link active" aria-current="page" href="?page=Torricelli">Torricelli</a>
         </div>
         <a href="https://github.com/YoungC0DE" target="_blank">
             <i class="bi bi-github text-light fs-2 me-2"></i>
