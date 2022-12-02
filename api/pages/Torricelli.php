@@ -36,11 +36,10 @@
 <span class="mb-2 text-secondary">Preencha os valores para o calculo</span>
 <form class="d-flex flex-row w-50 gap-3 mb-3">
   <div class="input-group has-validation">
-    <span class="input-group-text rounded-0 rounded-start">Velocidade Inicial</span>
+    <span class="input-group-text rounded-0 rounded-start">Velocidade Inicial (km/h)</span>
     <input type="number" value=0 min=0 class="form-control rounded-0" id="V0">
-    <span class="input-group-text rounded-0">Desaceleração</span>
-    <input type="number" value=0 min=0 class="form-control rounded-0" id="D">
-    <span class="input-group-text rounded-0 rounded-end">m/s²</span>
+    <span class="input-group-text rounded-0">Desaceleração (m/s)²</span>
+    <input type="number" value=0 min=0 class="form-control rounded-0 rounded-end" id="D">
   </div>
 </form>
 
@@ -71,7 +70,8 @@
     result.textContent += `0² = ${V0}² - 2.${D}.Δs\n`
     result.textContent += `0 = ${V0 * V0} - ${2*D}.Δs\n`
     result.textContent += `Δs = ${V0 * V0} / ${2*D}\n`
-    result.textContent += `Δs = ${V0 * V0 / 2*D}m\n`
+    result.textContent += "---------------------------\n"
+    result.textContent += `Δs = ${(V0 * V0 / 2*D).toFixed(1)}m\n`
   }
 
   const copy = () => {
