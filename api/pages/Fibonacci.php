@@ -33,7 +33,7 @@
   <span class="p-2 border rounded fs-2">Fn = fn-1 + Fn-2</span>
 </div>
 
-<span class="mb-2 text-secondary">Preencha os valores para o calculo</span>
+<span class="mb-2 text-secondary">Enter the values for the calculation</span>
 <form class="d-flex flex-row w-50 gap-3 mb-3">
   <div class="input-group has-validation">
     <span class="input-group-text rounded-0 rounded-start">The value</span>
