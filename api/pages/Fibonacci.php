@@ -46,7 +46,7 @@
 
 <div class="d-flex flex-row gap-3">
   <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="clean()">Clear</button>
-  <button type="button" class="btn btn-primary mb-3 rounded-1" onclick="calc()">Calc</button>
+  <button type="button" class="btn btn-primary mb-3 rounded-1" onclick="calc()">Calculate</button>
   <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="copy()">Copy</button>
 </div>
 
