@@ -27,7 +27,7 @@
   <span class="p-2 border rounded fs-2">Δ = b² - 4.a.c</span>
 </div>
 
-<span class="mb-2 text-secondary">Type the values for the calculation</span>
+<span class="mb-2 text-secondary">Enter the values for the calculation</span>
 <form class="d-flex flex-row w-50 gap-3 mb-3">
   <div class="input-group has-validation">
     <span class="input-group-text rounded-0 rounded-start">Value A</span>
