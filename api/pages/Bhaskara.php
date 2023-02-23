@@ -27,27 +27,27 @@
   <span class="p-2 border rounded fs-2">Δ = b² - 4.a.c</span>
 </div>
 
-<span class="mb-2 text-secondary">Preencha os valores para o calculo</span>
+<span class="mb-2 text-secondary">Type the values for the calculation</span>
 <form class="d-flex flex-row w-50 gap-3 mb-3">
   <div class="input-group has-validation">
-    <span class="input-group-text rounded-0 rounded-start">Valor A</span>
+    <span class="input-group-text rounded-0 rounded-start">Value A</span>
     <input type="number" value=0 class="form-control rounded-0" id="valueA">
-    <span class="input-group-text rounded-0">Valor B</span>
+    <span class="input-group-text rounded-0">Value B</span>
     <input type="number" value=0 class="form-control rounded-0" id="valueB">
-    <span class="input-group-text rounded-0">Valor C</span>
+    <span class="input-group-text rounded-0">Value C</span>
     <input type="number" value=0 class="form-control rounded-0 rounded-end" id="valueC">
   </div>
 </form>
 
 <div class="d-flex flex-row gap-3">
-  <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="clean()">Limpar</button>
-  <button type="button" class="btn btn-primary mb-3 rounded-1" onclick="calc()">Calcular</button>
-  <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="copy()">Copiar</button>
+  <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="clean()">Clear</button>
+  <button type="button" class="btn btn-primary mb-3 rounded-1" onclick="calc()">Calc</button>
+  <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="copy()">Copy</button>
 </div>
 
 <div class="form-floating w-50">
   <textarea class="form-control text-center" id="result" readonly></textarea>
-  <label for="result">Resolução:</label>
+  <label for="result">Resolution:</label>
 </div>
 
 <script>
@@ -72,7 +72,7 @@
     result.textContent += `Δ = ${delta}\n\n`
     result.textContent += "-------------------------\n\n"
     if (delta <= 0) {
-      result.textContent += "O delta é negativo ou igual a zero e não possui raizes reais\n"
+      result.textContent += "The delta is negative or equal to zero and has no real roots\n"
       return
     }
     result.textContent += "X = (-b ± √Δ) / 2.a\n"
@@ -85,13 +85,13 @@
     result.textContent += `X² = ${-B - Math.sqrt(delta)} / ${2 * A}\n`
     result.textContent += `X² = ${x2.toFixed(1)}\n\n`
     result.textContent += "-------------------------\n\n"
-    result.textContent += `Resultado Final: (X¹ = ${x1.toFixed(1)}, X²= ${x2.toFixed(1)})`
+    result.textContent += `Final result: (X¹ = ${x1.toFixed(1)}, X²= ${x2.toFixed(1)})`
   }
 
   const copy = () => {
     result.select()
     result.setSelectionRange(0, 99999) /* For mobile devices */
     navigator.clipboard.writeText(result.value)
-    alert('copiado')
+    alert('copied!')
   }
 </script>
