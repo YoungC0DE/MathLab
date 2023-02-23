@@ -33,25 +33,25 @@
   <span class="p-2 border rounded fs-2">V² = V₀² + 2.a.Δs</span>
 </div>
 
-<span class="mb-2 text-secondary">Preencha os valores para o calculo</span>
+<span class="mb-2 text-secondary">Enter the values for the calculation</span>
 <form class="d-flex flex-row w-50 gap-3 mb-3">
   <div class="input-group has-validation">
-    <span class="input-group-text rounded-0 rounded-start">Velocidade Inicial (km/h)</span>
+    <span class="input-group-text rounded-0 rounded-start">Start speed (km/h)</span>
     <input type="number" value=0 min=0 class="form-control rounded-0" id="V0">
-    <span class="input-group-text rounded-0">Desaceleração (m/s)²</span>
+    <span class="input-group-text rounded-0">Decelerate (m/s)²</span>
     <input type="number" value=0 min=0 class="form-control rounded-0 rounded-end" id="D">
   </div>
 </form>
 
 <div class="d-flex flex-row gap-3">
-  <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="clean()">Limpar</button>
-  <button type="button" class="btn btn-primary mb-3 rounded-1" onclick="calc()">Calcular</button>
-  <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="copy()">Copiar</button>
+  <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="clean()">Clear</button>
+  <button type="button" class="btn btn-primary mb-3 rounded-1" onclick="calc()">Calc</button>
+  <button type="button" class="btn btn-secondary mb-3 rounded-1" onclick="copy()">Copy</button>
 </div>
 
 <div class="form-floating w-50">
   <textarea class="form-control text-center" id="result" readonly></textarea>
-  <label for="result">Resolução:</label>
+  <label for="result">Resolution:</label>
 </div>
 
 <script>
@@ -78,6 +78,6 @@
     result.select()
     result.setSelectionRange(0, 99999) /* For mobile devices */
     navigator.clipboard.writeText(result.value)
-    alert('copiado')
+    alert('copied!')
   }
 </script>
