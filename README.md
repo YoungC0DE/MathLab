@@ -1,7 +1,8 @@
 # MathLab
 
-> You can achieve resolution of complex mathematical calculations
-> In this moment you can resolve Baskara, Torricelli and Fibonatti 
+> You can get the resolution of complex mathematical calculations
+>
+> At this time you can solve Baskara, Torricelli and Fibonacci
 
 Languages and Tecnologies:
 
