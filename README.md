@@ -8,6 +8,7 @@ Languages and Tecnologies:
 
 - HTML5,
 - CSS3,
+- Javascript;
 - PHP,
 - Boostrap.
 
