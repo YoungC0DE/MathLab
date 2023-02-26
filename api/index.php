@@ -39,6 +39,10 @@
         }
         ?>
     </div>
+    <footer class="d-flex flex-column justify-content-center align-items-center mt-5">
+        <span>Developer by <a href="https://github.com/YoungC0DE" class="text-decoration-none">Rafael Anjos</a></span>
+        <span>YoungC0DE</span>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
